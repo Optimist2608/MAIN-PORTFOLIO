@@ -27,6 +27,13 @@ body {
     overflow: hidden;
     position: relative;
     animation: scan-fade-in 1s ease-out forwards;
+
+    @media (max-width: 768px) {
+        height: auto !important; 
+        min-height: 100vh; 
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch; 
+    }
 }
 
 a {
