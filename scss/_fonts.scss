@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'JetBrainsMono-Regular';
+    src:
+        local('JetBrains Mono Regular'),
+        url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+        url('../fonts/JetBrainsMono-Regular.woff') format('woff'),
+        url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono-Bold';
+    src:
+        local('JetBrains Mono Bold'),
+        url('../fonts/JetBrainsMono-Bold.woff2') format('woff2'),
+        url('../fonts/JetBrainsMono-Bold.woff') format('woff'),
+        url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tektur-SemiBold';
+    src:
+        local('Tektur SemiBold'),
+        url('../fonts/Tektur-SemiBold.woff2') format('woff2'),
+        url('../fonts/Tektur-SemiBold.woff') format('woff'),
+        url('../fonts/Tektur-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tektur-ExtraBold';
+    src:
+        local('Tektur ExtraBold'),
+        url('../fonts/Tektur-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Tektur-ExtraBold.woff') format('woff'),
+        url('../fonts/Tektur-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}

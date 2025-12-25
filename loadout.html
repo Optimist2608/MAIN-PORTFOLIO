@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Loadout | Tactical HUD</title>
+    <link rel="stylesheet" href="./compilated/style.css">
+    <link rel="icon" type="image/png" href="./fav/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./fav/favicon.svg" />
+    <link rel="shortcut icon" href="./fav/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio" />
+    <link rel="manifest" href="./fav/site.webmanifest" />
+</head>
+
+<body>
+
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="grid-overlay"></div>
+        <div class="color-overlay"></div>
+    </div>
+
+    <div class="ui-container dossier-mode">
+
+        <header class="status-bar">
+            <span>FILE: GEAR_SPECS.DAT</span>
+            <span>SYSTEM CHECK: OK</span>
+            <a href="menu.html" class="back-link">&lt; BACK TO MENU</a>
+        </header>
+
+        <main class="loadout-layout">
+
+            
+            <div class="section-intro">
+                <h1>SYSTEM LOADOUT</h1>
+                <p>Конфигурация рабочей станции и программное обеспечение.</p>
+            </div>
+
+            <section class="gear-section">
+                <h3><span class="decor">::</span> MAIN WORKSTATION / ЖЕЛЕЗО</h3>
+
+                <div class="pc-specs-container">
+
+                    
+                    <div class="pc-visual">
+                        <div class="case-outline">
+                            <span class="part cpu">CPU</span>
+                            <span class="part gpu">GPU</span>
+                            <span class="part ram">RAM</span>
+                            <span class="part ssd">SSD</span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="specs-list">
+
+                        <div class="spec-item">
+                            <span class="label">CPU / ПРОЦЕССОР</span>
+                            <span class="val">Intel Core i5-12400F</span> 
+                        </div>
+
+                        <div class="spec-item">
+                            <span class="label">GPU / ВИДЕОКАРТА</span>
+                            <span class="val">NVIDIA RTX 4060 Ti 8GB</span> 
+                        </div>
+
+                        <div class="spec-item">
+                            <span class="label">RAM / ПАМЯТЬ</span>
+                            <span class="val">32GB DDR5 3200MHz</span> 
+                        </div>
+
+                        <div class="spec-item">
+                            <span class="label">SSD / ДИСК</span>
+                            <span class="val">T-CREATE 953 1TB</span> 
+                        </div>
+
+                        <div class="spec-item">
+                            <span class="label">MAIN MONITOR / ОСНОВНОЙ МОНИТОР</span>
+                            <span class="val">"27.2" 2K 165Hz</span> 
+                        </div>
+
+                        <div class="spec-item">
+                            <span class="label">2-j MONITOR / 2-й МОНИТОР</span>
+                            <span class="val">"21.5" FULL HD 60Hz</span> 
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="gear-section">
+                <h3><span class="decor">::</span> SOFTWARE / ОКРУЖЕНИЕ</h3>
+
+                <div class="soft-grid">
+                    <div class="soft-card">
+                        <span class="soft-icon">💻</span>
+                        <h4>OS</h4>
+                        <p>Windows 11 Pro</p>
+                    </div>
+                    <div class="soft-card">
+                        <span class="soft-icon">📝</span>
+                        <h4>EDITOR</h4>
+                        <p>VS Code</p>
+                        <span class="sub">Theme: Bearded Arc EolStorm</span>
+                    </div>
+                    <div class="soft-card">
+                        <span class="soft-icon">🎨</span>
+                        <h4>DESIGN</h4>
+                        <p>Figma & Photoshop</p>
+                    </div>
+                    <div class="soft-card">
+                        <span class="soft-icon">🐚</span>
+                        <h4>TERMINAL</h4>
+                        <p>PowerShell / Git Bash</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="mini-footer">
+            // END OF SPECS //
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

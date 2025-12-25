@@ -1,0 +1,35 @@
+$color-green: #0aff60;
+$color-bg-dark: #020a05;
+$color-glass: rgba(0, 20, 10, 0.6);
+$color-text: #ffffff;
+
+$font-main: 'JetBrainsMono-Regular', monospace;
+$font-bold: 'JetBrainsMono-Bold', monospace;
+$font-ui: 'Tektur-SemiBold', sans-serif;
+$font-header: 'Tektur-ExtraBold', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+    color: $color-text;
+    font-family: $font-main;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    animation: scan-fade-in 1s ease-out forwards;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

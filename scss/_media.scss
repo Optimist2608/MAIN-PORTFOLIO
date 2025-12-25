@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    .ui-container {
+        padding: 15px;
+        margin: 5px;
+        border: none;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .hero-content {
+        padding: 25px;
+        width: 100%;
+    }
+
+    .status-bar {
+        font-size: 11px;
+    }
+
+    .role {
+        font-size: 16px;
+    }
+
+    .tech-grid {
+        display: none;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .nav-card {
+        height: 120px;
+        padding: 20px;
+
+        .card-number {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Log | Tactical HUD</title>
+    <link rel="stylesheet" href="./compilated/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="./fav/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./fav/favicon.svg" />
+    <link rel="shortcut icon" href="./fav/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio" />
+    <link rel="manifest" href="./fav/site.webmanifest" />
+</head>
+
+<body>
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="./video/bg.mp4" type="video/mp4" />
+        </video>
+        <div class="grid-overlay"></div>
+        <div class="color-overlay"></div>
+    </div>
+
+    <div class="ui-container dossier-mode">
+        <header class="status-bar">
+            <span>FILE: CODE_PROJECTS.DAT</span>
+            <span>TARGETS: 3 DETECTED</span>
+            <a href="menu.html" class="back-link">&lt; BACK TO MENU</a>
+        </header>
+
+        <main class="projects-layout">
+            <div class="page-intro">
+                <h1>PROJECT ARCHIVE</h1>
+                <p>Разработка веб-приложений и интерфейсов.</p>
+            </div>
+
+
+
+            <article class="project-card complexity-high">
+
+                <div class="project-info">
+                    <div class="p-header">
+                        <span class="p-number">01</span>
+                        <div class="p-title-group">
+                            <h2>FLIGHT DASHBOARD APP</h2>
+                            <span class="p-status">COMPLEXITY: HIGH</span>
+                        </div>
+                    </div>
+
+                    <p class="p-desc">
+                        Первое портфолио, очень много функционала сделан с помощью нейросети. Смена темы демо проектов.
+                    </p>
+
+                    <div class="tech-stack-mini">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+
+                    <div class="p-actions">
+                        <a href="https://github.com/Optimist2608/Relise-Portfolio-1?tab=readme-ov-file" target="_blank" class="btn-action btn-git">
+                            <i class="fab fa-github"></i> CODE
+                        </a>
+                        <a href="https://optimist2608.github.io/Relise-Portfolio-1/" target="_blank" class="btn-action btn-demo">
+                            <i class="fas fa-external-link-alt"></i> LIVE DEMO
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="project-visual">
+                    <div class="screen-frame">
+                        <picture>
+                            <source srcset="./img/proj/prew.avif" type="image/avif">
+                            <source srcset="./img/proj/prew.webp" type="image/webp">
+                            <img src="./img/proj/prew.png" alt="1 проект">
+                        </picture>
+                        <div class="scan-effect"></div>
+                    </div>
+                </div>
+            </article>
+
+
+
+            <article class="project-card complexity-mid">
+                <div class="project-info">
+                    <div class="p-header">
+                        <span class="p-number">02</span>
+                        <div class="p-title-group">
+                            <h2>RC CLUB LANDING</h2>
+                            <span class="p-status">COMPLEXITY: MEDIUM</span>
+                        </div>
+                    </div>
+
+                    <p class="p-desc">
+                        Лендинг для авиамодельного клуба. Адаптивная верстка (Mobile
+                        First), слайдер фотографий, форма обратной связи. Использован
+                        методология BEM для стилей.
+                    </p>
+
+                    <div class="tech-stack-mini">
+                        <span>HTML5</span>
+                        <span>CSS Grid/Flex</span>
+                        <span>JS Sliders</span>
+                        <span>Figma</span>
+                    </div>
+
+                    <div class="p-actions">
+                        <a href="#" target="_blank" class="btn-action btn-git">
+                            <i class="fab fa-github"></i> CODE
+                        </a>
+                        <a href="#" target="_blank" class="btn-action btn-demo">
+                            <i class="fas fa-external-link-alt"></i> LIVE DEMO
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-visual">
+                    <div class="screen-frame">
+                        <img src="project2.jpg" alt="Скриншот проекта 2" />
+                        <div class="scan-effect"></div>
+                    </div>
+                </div>
+            </article>
+
+
+
+            <article class="project-card complexity-low">
+                <div class="project-info">
+                    <div class="p-header">
+                        <span class="p-number">03</span>
+                        <div class="p-title-group">
+                            <h2>TASK MANAGER</h2>
+                            <span class="p-status">COMPLEXITY: BASIC</span>
+                        </div>
+                    </div>
+
+                    <p class="p-desc">
+                        Классический To-Do список с возможностью фильтрации задач. Первый
+                        проект на нативном JavaScript для отработки работы с DOM-деревом.
+                    </p>
+
+                    <div class="tech-stack-mini">
+                        <span>JavaScript</span>
+                        <span>DOM Manipulation</span>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="p-actions">
+                        <a href="#" target="_blank" class="btn-action btn-git">
+                            <i class="fab fa-github"></i> CODE
+                        </a>
+                        <a href="#" target="_blank" class="btn-action btn-demo">
+                            <i class="fas fa-external-link-alt"></i> LIVE DEMO</a>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+
+</html>

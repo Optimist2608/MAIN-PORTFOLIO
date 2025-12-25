@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comm Link | Tactical HUD</title>
+    <link rel="stylesheet" href="./compilated/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./fav/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./fav/favicon.svg" />
+    <link rel="shortcut icon" href="./fav/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio" />
+    <link rel="manifest" href="./fav/site.webmanifest" />
+</head>
+
+<body>
+
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="grid-overlay"></div>
+        <div class="color-overlay"></div>
+    </div>
+
+    <div class="ui-container dossier-mode">
+
+        <header class="status-bar">
+            <span>FILE: COMM_LINK.DAT</span>
+            <span>STATUS: LISTENING...</span>
+            <a href="menu.html" class="back-link">&lt; BACK TO MENU</a>
+        </header>
+
+        <main class="contact-layout">
+
+            <div class="page-intro">
+                <h1>ESTABLISH CONNECTION</h1>
+                <p>Выберите канал связи для передачи данных.</p>
+            </div>
+
+
+            <div class="comm-grid">
+
+
+                <a href="mailto:akkMakara@mail.ru" class="comm-card">
+                    <div class="card-header">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span class="channel-name">EMAIL RELAY</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="value">akkMakara@mail.ru</span>
+                        <p class="desc">Основной канал связи</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="label">PING:</span>
+                        <span class="time">~24 HOURS</span>
+                    </div>
+                </a>
+
+
+                <a href="https://t.me/DeadRead7" target="_blank" class="comm-card highlight">
+                    <div class="card-header">
+                        <span class="icon"><i class="fa-brands fa-telegram"></i></span>
+                        <span class="channel-name">SECURE CHAT</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="value">@DeadRead7</span>
+                        <p class="desc">Быстрые сообщения</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="label">PING:</span>
+                        <span class="time fast">1-2 HOURS</span>
+                    </div>
+                </a>
+
+
+                <div class="comm-card">
+                    <div class="card-header">
+                        <span class="icon"><i class="fa-brands fa-discord"></i></span>
+                        <span class="channel-name">VOICE / DEV</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="value">nooptimist</span>
+                        <p class="desc">Общение и разработка</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="label">PING:</span>
+                        <span class="time fastest">~1 HOUR</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <section class="comm-log">
+                <h3><span class="decor">>></span> PROTOCOL PREFERENCES</h3>
+                <div class="log-content">
+                    <p>
+                        <span class="tag">EMAIL</span> — Используется для деловых предложений и отправки файлов.
+                    </p>
+                    <p>
+                        <span class="tag">TELEGRAM</span> — Приоритетный канал для быстрых вопросов и обсуждения
+                        деталей.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

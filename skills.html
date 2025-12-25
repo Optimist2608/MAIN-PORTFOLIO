@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Matrix | Tactical HUD</title>
+    <link rel="stylesheet" href="./compilated/style.css">
+    <link rel="icon" type="image/png" href="./fav/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./fav/favicon.svg" />
+    <link rel="shortcut icon" href="./fav/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio" />
+    <link rel="manifest" href="./fav/site.webmanifest" />
+</head>
+
+<body>
+
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="./video/bg.mp4" type="video/mp4">
+        </video>
+        <div class="grid-overlay"></div>
+        <div class="color-overlay"></div>
+    </div>
+
+    <div class="ui-container dossier-mode">
+
+        <header class="status-bar">
+            <span>FILE: SKILLS_MATRIX.DAT</span>
+            <span>LEVEL: JUNIOR+</span>
+            <a href="menu.html" class="back-link">&lt; BACK TO MENU</a>
+        </header>
+
+        <main class="skills-layout">
+
+
+            <div class="skills-intro">
+                <h1>TECHNICAL READOUT</h1>
+                <p>
+                    Матрица компетенций оператора.d
+                </p>
+            </div>
+
+            <div class="skills-grid-container">
+
+
+                <section class="skill-category">
+                    <div class="cat-header">
+                        <h3><span class="icon">✈️</span> AVIA-ENGINEERING </h3>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Aerodynamics / Тех. знания</span>
+                            <span class="percent">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 100%"></div>
+                        </div>
+                        <p class="skill-desc">Теория полета, расчет центровки, выбор профиля крыла.</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Blueprints / Чертежи</span>
+                            <span class="percent">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 100%"></div>
+                        </div>
+                        <p class="skill-desc">Чтение и создание чертежей, работа с масштабом.</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Work with materials / Работа с материалами</span>
+                            <span class="percent">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 95%"></div>
+                        </div>
+                        <p class="skill-desc">Бальза, сосна, стеклопластик, термоусадочные пленки.</p>
+                    </div>
+
+                </section>
+
+                <section class="skill-category">
+                    <div class="cat-header">
+                        <h3><span class="icon">💻</span> WEB & DESIGN STACK</h3>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5 / CSS3 / SCSS</span>
+                            <span class="percent">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Figma / Photoshop</span>
+                            <span class="percent">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 90%"></div>
+                        </div>
+                        <p class="skill-desc">Верстка макетов, работа с растровой графикой.</p>
+                    </div>
+
+                    <div class="skill-item learning">
+                        <div class="skill-info">
+                            <span>JavaScript / Node.js</span>
+                            <span class="percent status-loading">LOADING...</span>
+                        </div>
+                        <div class="progress-bar loading-bar">
+                            <div class="fill"></div>
+                        </div>
+                        <p class="skill-desc">Активное изучение: DOM, Event Loop, основы Backend.</p>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <section class="tools-cloud">
+                <h3><span class="decor">::</span> TOOLS & ENVIRONMENT</h3>
+                <div class="tools-list">
+                    <span class="tool-tag">VS Code</span>
+                    <span class="tool-tag">Git</span>
+                    <span class="tool-tag">Figma</span>
+                    <span class="tool-tag">Photoshop</span>
+                    <span class="tool-tag">Pixso</span>
+                    <span class="tool-tag">BEM Methodology</span>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

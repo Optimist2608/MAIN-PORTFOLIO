@@ -1,0 +1,230 @@
+@use 'base' as *;
+
+
+.projects-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0 80px 0;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h1 {
+        font-family: $font-header;
+        font-size: 32px;
+        color: #fff;
+    }
+
+    p {
+        font-family: $font-main;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    background: rgba(0, 20, 10, 0.6);
+    border: 1px solid rgba($color-green, 0.3);
+    padding: 30px;
+    position: relative;
+    transition: 0.3s;
+
+    border-left: 4px solid $color-green;
+
+    &.complexity-high {
+        border-left-color: #ff3333;
+    }
+
+    &.complexity-mid {
+        border-left-color: #ffcc00;
+    }
+
+    &.complexity-low {
+        border-left-color: $color-green;
+    }
+
+    &:hover {
+        background: rgba(0, 20, 10, 0.8);
+        border-color: #fff;
+        transform: translateY(-2px);
+    }
+}
+
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+    .p-number {
+        font-family: $font-header;
+        font-size: 40px;
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.1);
+        margin-right: 15px;
+        line-height: 0.8;
+    }
+
+    .p-title-group h2 {
+        font-family: $font-header;
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    .p-status {
+        font-family: $font-ui;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.5);
+        letter-spacing: 1px;
+    }
+}
+
+.p-desc {
+    font-family: $font-main;
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+
+.tech-stack-mini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    span {
+        font-family: $font-ui;
+        font-size: 12px;
+        color: $color-green;
+        background: rgba($color-green, 0.1);
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+}
+
+
+.p-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-family: $font-ui;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid;
+    transition: 0.3s;
+
+    i {
+        margin-right: 8px;
+    }
+
+    &.btn-git {
+        border-color: rgba(255, 255, 255, 0.3);
+        color: #fff;
+
+        &:hover {
+            background: #fff;
+            color: #000;
+        }
+    }
+
+
+    &.btn-demo {
+        border-color: $color-green;
+        color: $color-green;
+        background: rgba($color-green, 0.1);
+
+        &:hover {
+            background: $color-green;
+            color: #000;
+            box-shadow: 0 0 15px $color-green;
+        }
+    }
+}
+
+
+
+.project-visual {
+    width: 350px;
+    flex-shrink: 0;
+
+    .screen-frame {
+        width: 100%;
+        height: 220px;
+        background: #000;
+        border: 1px solid #444;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(80%) brightness(0.7);
+            transition: 0.5s;
+        }
+
+        .scan-effect {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba($color-green, 0.1) 50%);
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+    }
+
+
+}
+
+.project-card:hover .screen-frame img {
+    filter: grayscale(0%) brightness(1);
+}
+
+
+
+@media (max-width: 800px) {
+    .project-card {
+        flex-direction: column-reverse;
+    }
+
+    .project-visual {
+        width: 100%;
+
+        .screen-frame {
+            height: 200px;
+        }
+    }
+
+    .p-actions {
+        width: 100%;
+
+        .btn-action {
+            flex: 1;
+        }
+    }
+}

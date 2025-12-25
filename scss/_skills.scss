@@ -1,0 +1,210 @@
+@use 'base' as *;
+
+.skills-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0 80px 0;
+    gap: 40px;
+}
+
+
+.skills-intro {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h1 {
+        font-family: $font-header;
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-family: $font-main;
+        color: rgba(255, 255, 255, 0.6);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+
+.skills-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+.skill-category {
+    .cat-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        h3 {
+            font-family: $font-header;
+            font-size: 20px;
+            color: $color-green;
+            white-space: nowrap;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+
+            .icon {
+                font-size: 18px;
+                margin-right: 10px;
+                filter: grayscale(1);
+            }
+        }
+
+        .line {
+            height: 1px;
+            width: 100%;
+            background: rgba($color-green, 0.3);
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: -2px;
+                width: 5px;
+                height: 5px;
+                background: $color-green;
+            }
+        }
+    }
+}
+
+
+.skill-item {
+    margin-bottom: 25px;
+
+    .skill-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-family: $font-ui;
+        font-size: 14px;
+        font-weight: bold;
+
+        .percent {
+            color: $color-green;
+        }
+
+        .status-loading {
+            animation: blinker 1s infinite;
+            color: #ffcc00;
+        }
+    }
+
+
+    .progress-bar {
+        height: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba($color-green, 0.2);
+        position: relative;
+        overflow: hidden;
+
+        .fill {
+            height: 100%;
+            background: $color-green;
+            box-shadow: 0 0 10px $color-green;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 5px;
+                background: #fff;
+                opacity: 0.5;
+            }
+        }
+
+
+        &.loading-bar .fill {
+            width: 50%;
+            background: repeating-linear-gradient(45deg,
+                    #ffcc00,
+                    #ffcc00 10px,
+                    #d4aa00 10px,
+                    #d4aa00 20px);
+            box-shadow: 0 0 10px #ffcc00;
+            animation: loading-anim 2s linear infinite;
+        }
+    }
+
+    .skill-desc {
+        margin-top: 5px;
+        font-family: $font-main;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes loading-anim {
+    0% {
+        width: 30%;
+    }
+
+    50% {
+        width: 60%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+.tools-cloud {
+    margin-top: 40px;
+    border-top: 1px dashed rgba($color-green, 0.3);
+    padding-top: 20px;
+
+    h3 {
+        font-family: $font-header;
+        margin-bottom: 15px;
+        font-size: 18px;
+
+        .decor {
+            color: $color-green;
+        }
+    }
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tool-tag {
+    background: rgba($color-green, 0.05);
+    border: 1px solid rgba($color-green, 0.3);
+    padding: 8px 15px;
+    font-family: $font-main;
+    font-size: 13px;
+    color: #ccc;
+    transition: 0.3s;
+    cursor: default;
+
+    &:hover {
+        background: $color-green;
+        color: #000;
+        border-color: $color-green;
+        box-shadow: 0 0 10px rgba($color-green, 0.5);
+    }
+}

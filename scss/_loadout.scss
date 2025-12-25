@@ -1,0 +1,202 @@
+@use 'base' as *;
+
+.loadout-layout {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; 
+}
+
+.section-intro {
+    text-align: center;
+
+    h1 {
+        font-family: $font-header;
+        font-size: 32px;
+        color: #fff;
+    }
+
+    p {
+        font-family: $font-main;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.gear-section h3 {
+    font-family: $font-header;
+    font-size: 20px;
+    border-bottom: 1px solid rgba($color-green, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+
+    .decor {
+        color: $color-green;
+    }
+}
+
+
+.pc-specs-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: rgba(0, 20, 10, 0.4); 
+    border: 1px solid rgba($color-green, 0.2);
+    padding: 30px;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+
+.pc-visual {
+    flex-shrink: 0;
+
+    .case-outline {
+        width: 180px;
+        height: 240px;
+        border: 2px solid $color-green;
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 20px rgba($color-green, 0.1);
+
+        .part {
+            position: absolute;
+            background: rgba($color-green, 0.2);
+            border: 1px solid rgba($color-green, 0.5);
+            font-family: $font-ui;
+            font-size: 10px;
+            color: $color-green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cpu {
+            top: 40px;
+            left: 60px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .gpu {
+            bottom: 30px;
+            left: 20px;
+            width: 140px;
+            height: 40px;
+        }
+
+        .ram {
+            top: 30px;
+            right: 30px;
+            width: 15px;
+            height: 80px;
+        }
+
+        .ssd {
+            bottom: 80px;
+            left: 30px;
+            width: 60px;
+            height: 15px;
+        }
+    }
+}
+
+
+.specs-list {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba($color-green, 0.2);
+    font-family: $font-main;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    .label {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 13px;
+    }
+
+    .val {
+        color: #fff;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    &:hover {
+        background: rgba($color-green, 0.05);
+        padding-left: 10px;
+        transition: 0.2s;
+
+        .val {
+            color: $color-green;
+        }
+    }
+}
+
+
+.soft-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.soft-card {
+    background: rgba(0, 20, 10, 0.4);
+    border: 1px solid rgba($color-green, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+
+    .soft-icon {
+        font-size: 28px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-family: $font-header;
+        font-size: 14px;
+        color: $color-green;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-family: $font-main;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .sub {
+        display: block;
+        font-size: 11px;
+        color: #777;
+        margin-top: 5px;
+    }
+
+    &:hover {
+        border-color: $color-green;
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba($color-green, 0.2);
+    }
+}
+
+.mini-footer {
+    text-align: center;
+    color: rgba($color-green, 0.4);
+    font-size: 12px;
+    padding: 20px;
+}
