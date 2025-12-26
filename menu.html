@@ -1,108 +1,108 @@
-<!DOCTYPE html>
-<html lang="ru">
+    <!DOCTYPE html>
+    <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Menu | Tactical HUD</title>
-    <link rel="stylesheet" href="./compilated/style.css">
-    <link rel="icon" type="image/png" href="./fav/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./fav/favicon.svg" />
-    <link rel="shortcut icon" href="./fav/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Portfolio" />
-    <link rel="manifest" href="./fav/site.webmanifest" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>System Menu | Tactical HUD</title>
+        <link rel="stylesheet" href="./compilated/style.css">
+        <link rel="icon" type="image/png" href="./fav/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./fav/favicon.svg" />
+        <link rel="shortcut icon" href="./fav/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Portfolio" />
+        <link rel="manifest" href="./fav/site.webmanifest" />
+    </head>
 
-<body>
+    <body>
 
-    <div class="video-bg">
-        <video autoplay muted loop playsinline>
-            <source src="./video/bg.webm" type="video/webm">
-        </video>
-        <div class="grid-overlay"></div>
-        <div class="color-overlay"></div>
-    </div>
+        <div class="video-bg">
+            <video autoplay muted loop playsinline>
+                <source src="./video/bg.webm" type="video/webm">
+            </video>
+            <div class="grid-overlay"></div>
+            <div class="color-overlay"></div>
+        </div>
 
-    <div class="ui-container">
+        <div class="ui-container dossier-mode">
 
-        <header class="status-bar">
-            <span>COMMAND DECK</span>
-            <span>SELECT MODULE</span>
-            <a href="index.html" class="back-link">[ LOGOUT ]</a>
-        </header>
+            <header class="status-bar">
+                <span>COMMAND DECK</span>
+                <span>SELECT MODULE</span>
+                <a href="index.html" class="back-link">[ LOGOUT ]</a>
+            </header>
 
-        <main class="menu-grid">
+            <main class="menu-grid">
 
 
-            <a href="about.html" class="nav-card">
-                <div class="card-number">01</div>
-                <div class="card-content">
-                    <h3>BIO / ОБО МНЕ</h3>
-                    <p class="sub-text">Личное дело, биография</p>
+                <a href="about.html" class="nav-card">
+                    <div class="card-number">01</div>
+                    <div class="card-content">
+                        <h3>BIO / ОБО МНЕ</h3>
+                        <p class="sub-text">Личное дело, биография</p>
+                    </div>
+                    <div class="card-status">READY</div>
+                </a>
+
+
+                <a href="projects.html" class="nav-card">
+                    <div class="card-number">02</div>
+                    <div class="card-content">
+                        <h3>PROJECTS / КОД</h3>
+                        <p class="sub-text">Веб-разработка, GitHub</p>
+                    </div>
+                    <div class="card-status">ONLINE</div>
+                </a>
+
+
+                <a href="achievements.html" class="nav-card">
+                    <div class="card-number">03</div>
+                    <div class="card-content">
+                        <h3>AWARDS / НАГРАДЫ</h3>
+                        <p class="sub-text">Соревнования, сертификаты</p>
+                    </div>
+                    <div class="card-status">SYNCED</div>
+                </a>
+
+
+                <a href="skills.html" class="nav-card">
+                    <div class="card-number">04</div>
+                    <div class="card-content">
+                        <h3>SKILLS / НАВЫКИ</h3>
+                        <p class="sub-text">Стек технологий, инструменты</p>
+                    </div>
+                    <div class="card-status">ANALYZING</div>
+                </a>
+
+
+                <a href="contact.html" class="nav-card">
+                    <div class="card-number">05</div>
+                    <div class="card-content">
+                        <h3>CONTACTS / КОНТАКТЫ</h3>
+                        <p class="sub-text">Telegram, email, discord</p>
+                    </div>
+                    <div class="card-status">MONITORING</div>
+                </a>
+
+                <a href="loadout.html" class="nav-card">
+                    <div class="card-number">06</div>
+                    <div class="card-content">
+                        <h3>LOADOUT / ЭКИПИРОВКА</h3>
+                        <p class="sub-text">Моё железо, софт и инструменты</p>
+                    </div>
+                    <div class="card-status">EQUIPPED</div>
+                </a>
+
+            </main>
+
+            <footer>
+                <div class="tech-grid">
+                    <span>SYSTEM: WAITING FOR INPUT...</span>
                 </div>
-                <div class="card-status">READY</div>
-            </a>
+            </footer>
 
+        </div>
 
-            <a href="projects.html" class="nav-card">
-                <div class="card-number">02</div>
-                <div class="card-content">
-                    <h3>PROJECTS / КОД</h3>
-                    <p class="sub-text">Веб-разработка, GitHub</p>
-                </div>
-                <div class="card-status">ONLINE</div>
-            </a>
+    </body>
 
-
-            <a href="achievements.html" class="nav-card">
-                <div class="card-number">03</div>
-                <div class="card-content">
-                    <h3>AWARDS / НАГРАДЫ</h3>
-                    <p class="sub-text">Соревнования, сертификаты</p>
-                </div>
-                <div class="card-status">SYNCED</div>
-            </a>
-
-
-            <a href="skills.html" class="nav-card">
-                <div class="card-number">04</div>
-                <div class="card-content">
-                    <h3>SKILLS / НАВЫКИ</h3>
-                    <p class="sub-text">Стек технологий, инструменты</p>
-                </div>
-                <div class="card-status">ANALYZING</div>
-            </a>
-
-
-            <a href="contact.html" class="nav-card">
-                <div class="card-number">05</div>
-                <div class="card-content">
-                    <h3>CONTACTS / КОНТАКТЫ</h3>
-                    <p class="sub-text">Telegram, email, discord</p>
-                </div>
-                <div class="card-status">MONITORING</div>
-            </a>
-
-            <a href="loadout.html" class="nav-card">
-                <div class="card-number">06</div>
-                <div class="card-content">
-                    <h3>LOADOUT / ЭКИПИРОВКА</h3>
-                    <p class="sub-text">Моё железо, софт и инструменты</p>
-                </div>
-                <div class="card-status">EQUIPPED</div>
-            </a>
-
-        </main>
-
-        <footer>
-            <div class="tech-grid">
-                <span>SYSTEM: WAITING FOR INPUT...</span>
-            </div>
-        </footer>
-
-    </div>
-
-</body>
-
-</html>
+    </html>
